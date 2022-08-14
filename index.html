@@ -7,7 +7,7 @@
         <script>
             function revealField(){
                 document.getElementById("class").hidden = false;
-                //document.getElementById("class").disabled = false;
+                document.getElementById("class").disabled = false;
             }
             function hideField(){
                 document.getElementById("class").hidden = true;
@@ -24,7 +24,7 @@
             <input type="radio" id="genSubclass" onclick=revealField() name="genClass" value="genSubclass">
             <label for="Subclass">Subclass for given Class</label><br>
             <label for="class" hidden="true">Class: </label>
-            <select id="class" name="class" hidden="true"><br>
+            <select id="class" name="class" hidden="true" disabled="true"><br>
             <option value="artificer">Artificer</option>
             <option value="barbarian">Barbarian</option>
             <option value="bard">Bard</option>
