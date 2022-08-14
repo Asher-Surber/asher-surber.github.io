@@ -59,6 +59,6 @@
         echo $subclass." ".$class;
         return $race." ".$subclass." ".$class;*/
         ?>
-        <h1>Your character: <?php $race." ".$subclass." ".$class?></h1>
+        <h1>Your character: <?php echo $race." ".$subclass." ".$class?></h1>
     </body>
 </html>
