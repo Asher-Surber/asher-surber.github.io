@@ -55,5 +55,5 @@ if(strcmp($race, "") != 0){
     echo $race." ";
 }
 echo $subclass." ".$class;
-
+return $race." ".$subclass." ".$class;
 ?>
