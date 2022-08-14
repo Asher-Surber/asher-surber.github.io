@@ -23,7 +23,7 @@
         "shadow", "storm", "wild magic"), array("archfey", "celestial", "fathomless", "fiend", "genie", "great old one", "hexblade", "undead"), array("abjuration", "bladesinging", 
         "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "scribe", "transmutation", "war"));
 
-        $genRace = $_GET("genRace");
+        $genRace = $_GET["genRace"];
         $race = "";
         $i;
         if($genRace){
@@ -31,7 +31,7 @@
             $race = $races[$i];
         }
 
-        $genClass = $_GET("genClass");
+        $genClass = $_GET["genClass"];
         $class = "";
         $subclass = "";
         if($genClass){
@@ -41,9 +41,9 @@
             $subclass = $subclasses[$j][$k];
         }
 
-        $genSubclass = $_GET("genSubclass");
+        $genSubclass = $_GET["genSubclass"];
         if($genSubclass){
-            $class = $_GET("class");
+            $class = $_GET["class"];
             for($l = 0; $l < count($classes); $l++){
                 if(strcmp($class, $classes[$l]) == 0){
                     $m = $l;
