@@ -1,6 +1,5 @@
 <html>
     <body>
-        <h1>Your character: </h1>
         <?php
 
         $races = array("aarakocra", "aasimar", "bugbear", "centaur", "changeling", "dhampir", "dragonborn", "dwarf", "duergar",
@@ -54,11 +53,12 @@
             $subclass = $subclasses[$l][$k];
         }
 
-        if(strcmp($race, "") != 0){
+        /*if(strcmp($race, "") != 0){
             echo $race." ";
         }
         echo $subclass." ".$class;
-        //return $race." ".$subclass." ".$class;
+        return $race." ".$subclass." ".$class;*/
         ?>
+        <h1>Your character: <?php $race." ".$subclass." ".$class?></h1>
     </body>
 </html>
