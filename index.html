@@ -17,11 +17,11 @@
         <br>
         <p>Choose which things to generate!</p>
         <form action="/dnd_char_gen_script.php" method="get" novalidate>
-            <input type="checkbox" id="genRace" name="genRace" value="genRace">
+            <input type="checkbox" id="genRace" name="genRace" value="true">
             <label for="genRace">Race</label><br>
-            <input type="radio" id="genClass" onclick=hideField() name="genClass" value="genClass">
+            <input type="radio" id="genClass" onclick=hideField() name="genClass" value="true">
             <label for="genClass">Class and Subclass</label><br>
-            <input type="radio" id="genSubclass" onclick=revealField() name="genClass" value="genSubclass">
+            <input type="radio" id="genSubclass" onclick=revealField() name="genClass" value="true">
             <label for="Subclass">Subclass for given Class</label><br>
             <label for="class" hidden="true">Class: </label>
             <select id="class" name="class" hidden="true" disabled="true"><br>
